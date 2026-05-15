@@ -5,7 +5,15 @@
 > * docker
 
 ```bash
-cd path
+cd kokoro-onnx-docker-demo
+```
+
+```bash
+wget https://github.com/bitmms/kokoro-onnx-docker-demo/releases/download/model/models.zip
+```
+
+```bash
+unzip models.zip
 ```
 
 ```bash

@@ -67,6 +67,9 @@ docker exec -it kokoro-onnx-fastapi-dokcer-demo:latest /bin/bash
 
 
 # 三、从 Docker 镜像压缩包运行
+```bash
+docker save kokoro-onnx-fastapi-dokcer-demo:latest -o kokoro-onnx-fastapi-dokcer-demo-latest.tar
+```
 
 ```bash
 docker load < kokoro-onnx-fastapi-dokcer-demo-latest.tar

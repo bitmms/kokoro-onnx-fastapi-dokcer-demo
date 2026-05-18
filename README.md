@@ -4,6 +4,8 @@
 > * uv
 > * docker
 
+# 从源代码运行
+
 ```bash
 cd kokoro-onnx-docker-demo
 ```
@@ -17,11 +19,18 @@ unzip models.zip
 ```
 
 ```bash
-docker build -t kokoro-onnx-fastapi-dokcer-demo .
+uv sync
 ```
 
+
 ```bash
-docker run -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo:latest
+uv run main.py
+```
+
+# 从 Docker 运行
+
+```bash
+docker run -p 8210:8210 XXXXXXXXXX
 ```
 
 ```bash

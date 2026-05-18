@@ -17,7 +17,7 @@ cd kokoro-onnx-docker-demo
 ```
 
 ```bash
-wget https://github.com/bitmms/kokoro-onnx-docker-demo/releases/download/model/models.zip
+wget https://github.com/bitmms/kokoro-onnx-fastapi-dokcer-demo/releases/download/model/models.zip
 ```
 
 ```bash

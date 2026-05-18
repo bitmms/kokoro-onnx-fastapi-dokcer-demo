@@ -85,12 +85,15 @@ docker exec -it kokoro-onnx-fastapi-dokcer-demo:latest /bin/bash
 # 四、从 DockerHub 运行
 
 ```bash
-docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo:latest
+docker run -d -p 8210:8210 XXXXXXXXXXXXXXXXXXXXX
 ```
 
+
+
+# 五、测试
 ```bash
 curl -X POST "http://127.0.0.1:8210/generate-speech/" \
      -H "Content-Type: application/json" \
-     -d '{"text":"今天天气真好，我要自己上厕所", "voice":"zm_100", "speed": 1.0}' \
-     --output ./test.wav
+     -d '{"text": "今天天气真好，请尽快撤离", "voice": "zm_100", "speed": 1.0}' \
+     --output test.wav
 ```

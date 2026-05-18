@@ -7,6 +7,10 @@
 # 从源代码运行
 
 ```bash
+git clone https://github.com/bitmms/kokoro-onnx-docker-demo.git
+```
+
+```bash
 cd kokoro-onnx-docker-demo
 ```
 
@@ -21,7 +25,6 @@ unzip models.zip
 ```bash
 uv sync
 ```
-
 
 ```bash
 uv run main.py

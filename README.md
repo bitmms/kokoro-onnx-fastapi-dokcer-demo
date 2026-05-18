@@ -37,15 +37,15 @@ uv run main.py
 # 二、从源代码打包 Docker 镜像运行
 
 ```bash
-git clone https://github.com/bitmms/kokoro-onnx-docker-demo.git
+git clone https://github.com/bitmms/kokoro-onnx-fastapi-dokcer-demo.git
 ```
 
 ```bash
-cd kokoro-onnx-docker-demo
+cd kokoro-onnx-fastapi-dokcer-demo
 ```
 
 ```bash
-wget https://github.com/bitmms/kokoro-onnx-docker-demo/releases/download/model/models.zip
+wget https://github.com/bitmms/kokoro-onnx-fastapi-dokcer-demo/releases/download/model/models.zip
 ```
 
 ```bash
@@ -53,11 +53,15 @@ unzip models.zip
 ```
 
 ```bash
-docker build -t kokoro-onnx-fastapi-dokcer-demo .
+docker build -t kokoro-onnx-fastapi-dokcer-demo:latest .
 ```
 
 ```bash
-docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo
+docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo:latest
+```
+
+```bash
+docker exec -it kokoro-onnx-fastapi-dokcer-demo:latest /bin/bash
 ```
 
 
@@ -68,8 +72,12 @@ docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo
 docker load < kokoro-onnx-fastapi-dokcer-demo-latest.tar
 ```
 
+```bash
+docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo:latest
 ```
-docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo
+
+```bash
+docker exec -it kokoro-onnx-fastapi-dokcer-demo:latest /bin/bash
 ```
 
 
@@ -77,7 +85,7 @@ docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo
 # 四、从 DockerHub 运行
 
 ```bash
-docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo
+docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo:latest
 ```
 
 ```bash

@@ -4,7 +4,9 @@
 > * uv
 > * docker
 
-# 从源代码运行
+
+
+# 一、从源代码使用 uv 运行
 
 ```bash
 git clone https://github.com/bitmms/kokoro-onnx-docker-demo.git
@@ -30,10 +32,52 @@ uv sync
 uv run main.py
 ```
 
-# 从 Docker 运行
+
+
+# 二、从源代码打包 Docker 镜像运行
 
 ```bash
-docker run -p 8210:8210 XXXXXXXXXX
+git clone https://github.com/bitmms/kokoro-onnx-docker-demo.git
+```
+
+```bash
+cd kokoro-onnx-docker-demo
+```
+
+```bash
+wget https://github.com/bitmms/kokoro-onnx-docker-demo/releases/download/model/models.zip
+```
+
+```bash
+unzip models.zip
+```
+
+```bash
+docker build -t kokoro-onnx-fastapi-dokcer-demo .
+```
+
+```bash
+docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo
+```
+
+
+
+# 三、从 Docker 镜像压缩包运行
+
+```bash
+docker load < kokoro-onnx-fastapi-dokcer-demo-latest.tar
+```
+
+```
+docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo
+```
+
+
+
+# 四、从 DockerHub 运行
+
+```bash
+docker run -d -p 8210:8210 kokoro-onnx-fastapi-dokcer-demo
 ```
 
 ```bash

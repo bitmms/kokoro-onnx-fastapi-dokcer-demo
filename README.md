@@ -89,6 +89,10 @@ docker save kokoro-onnx-fastapi-docker-demo:v0.0.1 -o kokoro-onnx-fastapi-docker
 > 从 Docker 镜像压缩包运行
 
 ```bash
+wget https://github.com/bitmms/kokoro-onnx-fastapi-docker-demo/releases/download/image/kokoro-onnx-fastapi-docker-demo-latest.tar
+```
+
+```bash
 docker load < kokoro-onnx-fastapi-docker-demo-v0.0.1.tar
 ```
 

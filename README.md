@@ -63,8 +63,10 @@ docker images
 
 ```bash
 docker run -d \
-		   --name kokoro-onnx-fastapi-docker-demo \
-		   -p 8210:8210 kokoro-onnx-fastapi-docker-demo:v0.0.1
+  --name kokoro-onnx-fastapi-docker-demo \
+  --restart unless-stopped \
+  -p 8210:8210 \
+  kokoro-onnx-fastapi-docker-demo:v0.0.1
 ```
 
 ```bash
@@ -98,8 +100,10 @@ docker load < kokoro-onnx-fastapi-docker-demo-v0.0.1.tar
 
 ```bash
 docker run -d \
-		   --name kokoro-onnx-fastapi-docker-demo \
-		   -p 8210:8210 kokoro-onnx-fastapi-docker-demo:v0.0.1
+  --name kokoro-onnx-fastapi-docker-demo \
+  --restart unless-stopped \
+  -p 8210:8210 \
+  kokoro-onnx-fastapi-docker-demo:v0.0.1
 ```
 
 ```bash
@@ -136,8 +140,10 @@ docker tag registry.cn-hangzhou.aliyuncs.com/bitm-aliyun-repo/kokoro-onnx-fastap
 
 ```bash
 docker run -d \
-		   --name kokoro-onnx-fastapi-docker-demo \
-		   -p 8210:8210 kokoro-onnx-fastapi-docker-demo:v0.0.1
+  --name kokoro-onnx-fastapi-docker-demo \
+  --restart unless-stopped \
+  -p 8210:8210 \
+  kokoro-onnx-fastapi-docker-demo:v0.0.1
 ```
 
 

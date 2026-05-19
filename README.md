@@ -18,7 +18,7 @@ cd kokoro-onnx-fastapi-docker-demo
 ```
 
 ```bash
-wget https://github.com/bitmms/kokoro-onnx-fastapi-docker-demo/releases/download/model/models.zip
+wget https://github.com/bitmms/kokoro-onnx-fastapi-docker-demo/releases/download/model-and_image/models.zip
 ```
 
 ```bash
@@ -46,7 +46,7 @@ cd kokoro-onnx-fastapi-docker-demo
 ```
 
 ```bash
-wget https://github.com/bitmms/kokoro-onnx-fastapi-docker-demo/releases/download/model/models.zip
+wget https://github.com/bitmms/kokoro-onnx-fastapi-docker-demo/releases/download/model-and_image/models.zip
 ```
 
 ```bash
@@ -91,7 +91,7 @@ docker save kokoro-onnx-fastapi-docker-demo:v0.0.1 -o kokoro-onnx-fastapi-docker
 > 从 Docker 镜像压缩包运行
 
 ```bash
-wget https://github.com/bitmms/kokoro-onnx-fastapi-docker-demo/releases/download/image/kokoro-onnx-fastapi-docker-demo-latest.tar
+wget https://github.com/bitmms/kokoro-onnx-fastapi-docker-demo/releases/download/model-and_image/kokoro-onnx-fastapi-docker-demo-v0.0.1.tar
 ```
 
 ```bash

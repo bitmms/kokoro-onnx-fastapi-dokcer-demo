@@ -29,7 +29,7 @@ async def lifespan(_):
     )
     logging.info("文本转语音模型 Kokoro 加载完成")
 
-    zhg2p = zh.ZHG2P()
+    zhg2p = zh.ZHG2P(version="1.1")  # 这里比较传入 version=1.1 的参数，不然输出的中文音频有老外的口音
     logging.info("音素转换工具 ZHG2P 加载完成")
 
     # ======================
